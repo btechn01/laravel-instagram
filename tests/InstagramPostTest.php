@@ -1,9 +1,9 @@
 <?php
 
-namespace Retinens\LaravelInstagram\Tests;
+namespace Btechn01\LaravelInstagram\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Retinens\LaravelInstagram\InstagramPost;
+use Btechn01\LaravelInstagram\InstagramPost;
 
 class InstagramPostTest extends TestCase
 {
@@ -26,35 +26,43 @@ class InstagramPostTest extends TestCase
 
     public function testGetThumbnailImageUrlAttribute()
     {
-        $this->assertEquals('https://scontent.cdninstagram.com/vp/db572b3bd40988a54dd74307dd9cb1ee/5DC28DF6/t51.2885-15/e35/c140.0.360.360a/s150x150/69342603_718171511982964_6445195742645500869_n.jpg?_nc_ht=scontent.cdninstagram.com',
-            InstagramPost::first()->thumbnailImageUrl);
+        $this->assertEquals(
+            'https://scontent.cdninstagram.com/vp/db572b3bd40988a54dd74307dd9cb1ee/5DC28DF6/t51.2885-15/e35/c140.0.360.360a/s150x150/69342603_718171511982964_6445195742645500869_n.jpg?_nc_ht=scontent.cdninstagram.com',
+            InstagramPost::first()->thumbnailImageUrl
+        );
     }
 
     public function testGetStandardResolutionImageUrlAttribute()
     {
-        $this->assertEquals('https://scontent.cdninstagram.com/vp/0fd0c7d694525e94ad331243a829d086/5DC26EA8/t51.2885-15/e35/69342603_718171511982964_6445195742645500869_n.jpg?_nc_ht=scontent.cdninstagram.com',
-            InstagramPost::first()->standardResolutionImageUrl);
+        $this->assertEquals(
+            'https://scontent.cdninstagram.com/vp/0fd0c7d694525e94ad331243a829d086/5DC26EA8/t51.2885-15/e35/69342603_718171511982964_6445195742645500869_n.jpg?_nc_ht=scontent.cdninstagram.com',
+            InstagramPost::first()->standardResolutionImageUrl
+        );
     }
 
     public function testGetCaptionTextAttribute()
     {
-        $this->assertEquals("Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .
+        $this->assertEquals(
+            "Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .
 .
 .
 .
 .
 #vfx #vfxbreakdown #makingof #retinens #visuals #2d #3d #behindthescenes #aftereffects #video #portal #videomaker #adobe #animation",
-            InstagramPost::first()->captionText);
+            InstagramPost::first()->captionText
+        );
     }
 
     public function testGetHtmlCaptionTextAttribute()
     {
-        $this->assertEquals("Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .<br />
+        $this->assertEquals(
+            "Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .<br />
 .<br />
 .<br />
 .<br />
 .<br />
 #vfx #vfxbreakdown #makingof #retinens #visuals #2d #3d #behindthescenes #aftereffects #video #portal #videomaker #adobe #animation",
-            InstagramPost::first()->htmlCaptionText);
+            InstagramPost::first()->htmlCaptionText
+        );
     }
 }

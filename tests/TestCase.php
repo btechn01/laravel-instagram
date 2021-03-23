@@ -1,11 +1,11 @@
 <?php
 
-namespace Retinens\LaravelInstagram\Tests;
+namespace Btechn01\LaravelInstagram\Tests;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Retinens\LaravelInstagram\LaravelInstagramServiceProvider;
+use Btechn01\LaravelInstagram\LaravelInstagramServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -29,7 +29,7 @@ class TestCase extends Orchestra
     {
         Schema::dropAllTables();
 
-        include_once __DIR__.'/../database/migrations/2019_11_04_105714_create_instagram_posts_table.php';
+        include_once __DIR__ . '/../database/migrations/2019_11_04_105714_create_instagram_posts_table.php';
 
         (new \CreateInstagramPostsTable())->up();
     }

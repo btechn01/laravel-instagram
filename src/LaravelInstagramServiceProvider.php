@@ -1,6 +1,6 @@
 <?php
 
-namespace Retinens\LaravelInstagram;
+namespace Btechn01\LaravelInstagram;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
@@ -15,10 +15,10 @@ class LaravelInstagramServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('laravel-instagram.php'),
+            __DIR__ . '/../config/config.php' => config_path('laravel-instagram.php'),
         ], 'config');
 
         //Registering package commands.
@@ -38,7 +38,7 @@ class LaravelInstagramServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-instagram');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-instagram');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-instagram', function () {

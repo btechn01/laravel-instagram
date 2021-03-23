@@ -1,6 +1,6 @@
 <?php
 
-namespace Retinens\LaravelInstagram;
+namespace Btechn01\LaravelInstagram;
 
 use Illuminate\Database\Eloquent\Collection;
 use Vinkla\Instagram\Instagram;

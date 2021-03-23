@@ -1,11 +1,11 @@
 # Laravel Instagram
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/retinens/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-instagram)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/btechn01/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/btechn01/laravel-instagram)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![StyleCI](https://github.styleci.io/repos/221643787/shield?branch=master)](https://github.styleci.io/repos/221643787)
-[![Build Status](https://travis-ci.org/retinens/laravel-instagram.svg?branch=master)](https://travis-ci.org/retinens/laravel-instagram)
-![Codecov](https://img.shields.io/codecov/c/gh/retinens/laravel-instagram?style=flat-square)
-[![Total Downloads](https://img.shields.io/packagist/dt/retinens/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-instagram)
+[![Build Status](https://travis-ci.org/btechn01/laravel-instagram.svg?branch=master)](https://travis-ci.org/btechn01/laravel-instagram)
+![Codecov](https://img.shields.io/codecov/c/gh/btechn01/laravel-instagram?style=flat-square)
+[![Total Downloads](https://img.shields.io/packagist/dt/btechn01/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/btechn01/laravel-instagram)
 
 
 This package adds an Instagram post model to your Laravel application, for a cool feed or something like this.
@@ -20,7 +20,7 @@ The package relies on the `vinkla/instagram` package, and adds a solution to cac
 You can install the package via composer:
 
 ```bash
-composer require retinens/laravel-instagram
+composer require btechn01/laravel-instagram
 ```
 Then run the migrations used for caching, as the API is limited to 200 calls/hour.
 ```bash

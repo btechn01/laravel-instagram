@@ -1,11 +1,11 @@
 <?php
 
-namespace Retinens\LaravelInstagram;
+namespace Btechn01\LaravelInstagram;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Retinens\LaravelInstagram\Skeleton\SkeletonClass
+ * @see \Btechn01\LaravelInstagram\Skeleton\SkeletonClass
  */
 class LaravelInstagramFacade extends Facade
 {
